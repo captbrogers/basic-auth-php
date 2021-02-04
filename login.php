@@ -8,8 +8,8 @@ session_start();
 
         <title>A Simple PHP Auth System</title>
 
-        <link href="http://localsite.test/basic-auth-php/tailwind-2.0.2.css" rel="stylesheet">
-        <link href="http://localsite.test/basic-auth-php/app.css" rel="stylesheet">
+        <link href="tailwind-2.0.2.css" rel="stylesheet">
+        <link href="app.css" rel="stylesheet">
     </head>
     <body>
         <div class="w-full h-screen flex flex-col items-center justify-center">
@@ -18,7 +18,7 @@ session_start();
                 <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
             </div>
             <?php } ?>
-            <form method="get" action="http://localsite.test/basic-auth-php/auth/login.php">
+            <form method="get" action="auth/login.php">
                 <div class="flex flex-col">
                     <input type="text" id="username" name="username" placeholder="username" class="border border-gray-200 bg-white text-black px-3 py-2 mb-4">
                     <input type="password" id="password" name="password" placeholder="********" class="border border-gray-200 bg-white text-black px-3 py-2 mb-4">
